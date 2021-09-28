@@ -2,6 +2,7 @@ package com.railwayticketbooking;
 
 public class Passenger {
     int id=1;
+    private int TicketId;
     private  int passengerId;
     private String name;
     private int age;
@@ -9,6 +10,14 @@ public class Passenger {
     private String berthPreference;
     private int number;
     private String alloted="";
+
+    public int getTicketId() {
+        return TicketId;
+    }
+
+    public void setTicketId(int ticketId) {
+        TicketId = ticketId;
+    }
 
     public int getPassengerId() {
         return passengerId;
